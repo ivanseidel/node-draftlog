@@ -20,7 +20,7 @@ console.log()
 console.log(chalk[allTestsOk ? 'yellow' : 'red']('Completed'))
 console.log()
 
-// process.exit(allTestsOk ? 0 : 1)
+process.exit(allTestsOk ? 0 : 1)
 
 // Execute a single test
 function executeTest (test) {
