@@ -1,0 +1,29 @@
+{
+  "name": "postlog",
+  "version": "1.0.1",
+  "description": "Update logged lines after logging them",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanseidel/node-postlog.git"
+  },
+  "keywords": [
+    "logging",
+    "console",
+    "log",
+    "terminal",
+    "logger",
+    "ui",
+    "post",
+    "after"
+  ],
+  "author": "Ivan Seidel Gomes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivanseidel/node-postlog/issues"
+  },
+  "homepage": "https://github.com/ivanseidel/node-postlog#readme"
+}
