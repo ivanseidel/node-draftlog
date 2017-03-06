@@ -13,11 +13,11 @@ module.exports = [
 ]
 
 function CSIsave() {
-  assert.equal(Lib.CSIHelper.save(), '\033[s')
+  assert.equal(Lib.CSIHelper.save(), '\u001b7')
 }
 
 function CSIrestore() {
-  assert.equal(Lib.CSIHelper.restore(), '\033[u')
+  assert.equal(Lib.CSIHelper.restore(), '\u001b8')
 }
 
 function CSImoveUp() {
