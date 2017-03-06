@@ -21,7 +21,7 @@ function CSIrestore() {
 }
 
 function CSImoveUp() {
-  let ansi
+  var ansi
 
   // Test up with default
   ansi = Lib.CSIHelper.up()
@@ -37,7 +37,7 @@ function CSImoveUp() {
 }
 
 function CSImoveDown() {
-  let ansi
+  var ansi
 
   // Test down with default
   ansi = Lib.CSIHelper.down()
@@ -53,7 +53,7 @@ function CSImoveDown() {
 }
 
 function CSIclearLine() {
-  let ansi
+  var ansi
 
   // Test up with default
   ansi = Lib.CSIHelper.clearLine()

@@ -28,7 +28,7 @@ function executeTest (test) {
     test()
     showTestSuccess(test.name)
   } catch (e) {
-    let error = e.stack || e
+    var error = e.stack || e
 
     showTestError(test.name, error)
     allTestsOk = false
