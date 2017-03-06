@@ -36,6 +36,9 @@ How the
 // Setup
 const DraftLog = require('draftlog')
 DraftLog(console)
+
+// Or, in a single line:
+require('draftlog').into(console)
 ```
 
 To create a updatable log, use the `draft` method injected into the provided `console`:
@@ -52,7 +55,7 @@ update('Hy, my name is Ivan!')
 ```
 
 Here is some interesting exemples:
-```
+```javascript
 // Prints a clock incrementing one every second in the same line
 var draft = console.draft()
 var elapsed = 1
@@ -88,11 +91,13 @@ function someAsyncFunction(){
 You can create your own progress bar, just like "that":
 
 ```javascript
-// progess goes from 0 to 100
+require('draftlog').into(console)
+
+// Input progess goes from 0 to 100
 function ProgressBar(progress) {
   // Make it 50 characters length
-  progress = Math.round(progress / 2)
-  return '[' + '='.repeat(progess) + ' '.repeat(100 - progress) + '] ' + progress + '%'
+  var units = Math.round(progress / 2)
+  return '[' + '='.repeat(units) + ' '.repeat(50 - units) + '] ' + progress + '%'
 }
 
 var barLine = console.draft('Starting download...')
