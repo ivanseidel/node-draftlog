@@ -1,0 +1,13 @@
+*.swp
+*.swo
+*.DS_Store
+*.pyc
+npm-debug.log
+
+node_modules/
+output/
+log/
+tmp/*
+!tmp/.gitkeep
+.tmp/
+.sass-cache/

@@ -1,14 +1,14 @@
 {
-  "name": "postlog",
+  "name": "draftlog",
   "version": "1.0.1",
   "description": "Update logged lines after logging them",
   "main": "index.js",
   "scripts": {
-    "test": "node test"
+    "test": "node tests"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivanseidel/node-postlog.git"
+    "url": "git+https://github.com/ivanseidel/node-draftlog.git"
   },
   "keywords": [
     "logging",
@@ -23,7 +23,10 @@
   "author": "Ivan Seidel Gomes",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ivanseidel/node-postlog/issues"
+    "url": "https://github.com/ivanseidel/node-draftlog/issues"
   },
-  "homepage": "https://github.com/ivanseidel/node-postlog#readme"
+  "homepage": "https://github.com/ivanseidel/node-draftlog#readme",
+  "devDependencies": {
+    "chalk": "^1.1.3"
+  }
 }
