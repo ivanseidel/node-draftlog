@@ -109,6 +109,13 @@ downloadFile(function (progress) {
 // [============================                      ] 56%
 ```
 
+## Learn from examples!
+
+We have a few of them ready for you to use! Take a look at [the examples folder](examples/).
+Remember to replace `require('../')` with `require('draftlog')`.
+
+Also, install [`chalk`](https://github.com/chalk/chalk) to get colors on your terminal ;)
+
 ## Important things to know
 
 Because of the way Terminals are built, it is not possible to update a text outside the viewing area of the terminal.
