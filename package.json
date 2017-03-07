@@ -1,6 +1,6 @@
 {
   "name": "draftlog",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Update logged lines after logging them",
   "main": "index.js",
   "scripts": {
