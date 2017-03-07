@@ -137,6 +137,8 @@ optmized "slave" server. Please, disable it passing `true` as a seccond paramete
 ```javascript
 // Disable Initialization (true = production; false = development)
 DraftLog(console, true)
+// Or, with one line require-init:
+require('draftlog').into(console, true)
 ```
 
 ### Creator
