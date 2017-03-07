@@ -5,6 +5,8 @@
 
 Because Logging can be pretty and fun
 
+![DraftLog GIF](midia/draftlog.gif)
+
 [build-status-image]: https://img.shields.io/travis/ivanseidel/node-draftlog.svg
 [build-status-url]: http://travis-ci.org/ivanseidel/node-draftlog
 [dependencies-image]: https://gemnasium.com/badges/github.com/ivanseidel/node-draftlog.svg
