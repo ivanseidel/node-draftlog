@@ -65,7 +65,7 @@ setInterval( () => {
   draft('Elapsed', elapsed++, 'seconds')
 }, 1000)
 
-console.log('It doesn't matter')
+console.log('It doesn`t matter')
 console.log('How \n many \n lines \n ituses')
 ```
 
