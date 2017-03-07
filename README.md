@@ -47,6 +47,9 @@ DraftLog(console)
 
 // Or, in a single line:
 require('draftlog').into(console)
+
+// Account for manual line breaks with:
+require('draftlog').into(console).addLineListener(process.stdin)
 ```
 
 To create a updatable log, use the `draft` method injected into the provided `console`:
@@ -134,6 +137,9 @@ Note that, you can disable that behavior, by setting `DraftLog.defaults.canReWri
 Also, if the NodeJS environment cannot detect the number of rows of your terminal automatically, it will use
 the default height on `DraftLog.defaults.maximumLinesUp`. Modify that if needed.
 
+When using `into(console).addLineListener(process.stdin)`, your code will no more exit
+automatically because the stream is being "read". To stop your own code, you can call
+`process.exit(0)` or pause the stream when you want with: `process.stdin.pause()`.
 
 ## Discouragements
 

@@ -1,7 +1,7 @@
 const chalk = require('chalk')
 const DraftLog = require('../')
 
-DraftLog(console)
+DraftLog(console).addLineListener(process.stdin)
 
 // Shows a rolling name
 var nodeStr = '  NodeJS is Awesome!    What else can you want from a language?   '.split('')
