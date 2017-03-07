@@ -22,10 +22,16 @@ $ npm install draftlog
 
 ## What it does
 
-It allows you to re-write a line of your log after being written. Just like post 'updating'.
+It allows you to re-write a line of your log after being written. Just like post 'updating'. 
+This is the building block for any dynamic element such as `progress bars`, `loading status`, 
+`animations`, `checkboxes` and so on.
 
 It does that by keeping track of the current lines of code written thorugh the `stream`, and
 moving the cursor up to the line of the `LogDraft` you created previously, and updating it's content.
+
+Look in the examples folders to see how easy it is, to create anything. No strict and fixed
+widgets are given to you. Instead, use your creativity with this tool to create anything you
+want! Share the results later with an example ;)
 
 How the
 [HECK](http://ascii-table.com/ansi-escape-sequences-vt-100.php) is 
