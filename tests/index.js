@@ -5,7 +5,8 @@ const chalk = require('chalk')
 const tests = [].concat(
   require('./tests.package'),
   require('./tests.CSIHelper'),
-  require('./tests.lineCountStream')
+  require('./tests.lineCountStream'),
+  require('./tests.into')
 )
 
 // Run tests
