@@ -1,7 +1,7 @@
 {
   "name": "draftlog",
-  "version": "1.0.9",
-  "description": "Update logged lines after logging them",
+  "version": "1.0.10",
+  "description": "Create updatable log lines into the terminal, and give life to your logs!",
   "main": "index.js",
   "scripts": {
     "test": "node tests"
