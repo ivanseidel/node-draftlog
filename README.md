@@ -33,6 +33,8 @@ Look in the examples folders to see how easy it is, to create anything. No stric
 widgets are given to you. Instead, use your creativity with this tool to create anything you
 want! Share the results later with an example ;)
 
+Looking for CUTE Unicode chars? Check out [Unicute](https://github.com/ivanseidel/unicute).
+
 How the
 [HECK](http://ascii-table.com/ansi-escape-sequences-vt-100.php) is 
 [that](https://en.wikipedia.org/wiki/ANSI_escape_code) even
