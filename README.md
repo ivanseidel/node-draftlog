@@ -26,8 +26,8 @@ It allows you to re-write a line of your log after being written. Just like post
 This is the building block for any dynamic element such as `progress bars`, `loading status`, 
 `animations`, `checkboxes` and so on.
 
-It does that by keeping track of the current lines of code written thorugh the `stream`, and
-moving the cursor up to the line of the `LogDraft` you created previously, and updating it's content.
+It does that by keeping track of the current lines of code written through the `stream`, and
+moving the cursor up to the line of the `LogDraft` you created previously, and updating its content.
 
 Look in the examples folders to see how easy it is, to create anything. No strict and fixed
 widgets are given to you. Instead, use your creativity with this tool to create anything you
@@ -58,16 +58,16 @@ To create a updatable log, use the `draft` method injected into the provided `co
 
 ```javascript
 // Create a Draft log
-var update = console.draft('Hy, my name is')
+var update = console.draft('Hi, my name is')
 
 // You can call logs after it
 console.log('Something else')
 
 // Use the received callback to update it as many times as you want
-update('Hy, my name is Ivan!')
+update('Hi, my name is Ivan!')
 ```
 
-Here is some interesting exemples:
+Here are some interesting examples:
 ```javascript
 // Prints a clock incrementing one every second in the same line
 var draft = console.draft()
@@ -77,7 +77,7 @@ setInterval( () => {
 }, 1000)
 
 console.log('It doesn`t matter')
-console.log('How \n many \n lines \n ituses')
+console.log('How \n many \n lines \n it uses')
 ```
 
 Or maybe, to show an flow process?
@@ -139,14 +139,14 @@ Note that, you can disable that behavior, by setting `DraftLog.defaults.canReWri
 Also, if the NodeJS environment cannot detect the number of rows of your terminal automatically, it will use
 the default height on `DraftLog.defaults.maximumLinesUp`. Modify that if needed.
 
-When using `into(console).addLineListener(process.stdin)`, your code will no more exit
-automatically because the stream is being "read". To stop your own code, you can call
+When using `into(console).addLineListener(process.stdin)`, your code will no longer exit
+automatically, because the stream is being "read". To stop your own code, you can call
 `process.exit(0)` or pause the stream when you want with: `process.stdin.pause()`.
 
 ## Discouragements
 
 This library is awesome for development, `cli` tools and what ever you want to created, that is NOT an
-optmized "slave" server. Please, disable it passing `true` as a seccond parameter to the DraftLog initialization:
+optimized "slave" server. Please, disable it passing `true` as a second parameter to the DraftLog initialization:
 
 ```javascript
 // Disable Initialization (true = production; false = development)
