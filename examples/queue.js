@@ -14,7 +14,7 @@ QueueWorker.prototype.isWorking = function () {
 
 QueueWorker.prototype.idle = function () {
   this.working = false
-  this.status(chalk.dim(this.TAG), chalk.dim('iddle'))
+  this.status(chalk.dim(this.TAG), chalk.dim('idle'))
 }
 
 QueueWorker.prototype.run = function (){
