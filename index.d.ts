@@ -12,6 +12,6 @@ declare class LineCountStream {
 
 declare function DraftLog(console: Console, extra?: boolean): LineCountStream;
 declare namespace DraftLog {
-    declare function into(console: Console, extra?: boolean): LineCountStream;
+    function into(console: Console, extra?: boolean): LineCountStream;
 }
 export = DraftLog;
