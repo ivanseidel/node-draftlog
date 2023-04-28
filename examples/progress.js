@@ -4,7 +4,7 @@ const DraftLog = require('../').into(console)
 // Mock download
 var downloadMock = setInterval
 
-// Input progess goes from 0 to 100
+// Input progress goes from 0 to 100
 function ProgressBar(progress) {
   // Make it 50 characters length
   progress = Math.min(100, progress)

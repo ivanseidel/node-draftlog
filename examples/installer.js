@@ -4,8 +4,8 @@ const DraftLog = require('../').into(console)
 // Mock download
 var downloadMock = setInterval
 
-// Shows an instalation log for a `library` on the `step`
-function InstalationProgress(library, step, finished) {
+// Shows an installation log for a `library` on the `step`
+function InstallationProgress(library, step, finished) {
   var fillSpaces = ' '.repeat(15 - library.length)
   if (finished) {
     return chalk.cyan.dim(' > ') + chalk.yellow.dim(library) + fillSpaces + chalk.green('Installed')
@@ -14,14 +14,14 @@ function InstalationProgress(library, step, finished) {
   }
 }
 
-// Pretent do install stuff in series
+// Pretend do install stuff in series
 var libs = ['async', 'lodash', 'mongodb', 'chalk', 'express', 'forever', 'socket.io', 'pm2', 'mocha']
 var finished = false
 var installed = 0
 
 function startNextDownload() {
   if (installed >= libs.length) {
-    // Finished! (logs once only)
+    // Finished! (logs only once)
     if (!finished) {
       console.log()
       console.log(chalk.green('Finished Installation.'))
@@ -42,31 +42,31 @@ function startNextDownload() {
 function install(lib, callback) {
   var status = console.draft()
   
-  gatterDependencies()
+  gatherDependencies()
 
-  function gatterDependencies() {
-    status(InstalationProgress(lib, 'gatterDependencies'))
+  function gatherDependencies() {
+    status(InstallationProgress(lib, 'gatherDependencies'))
 
     // Wait 300ms before next step
-    setTimeout(function () {downloadDepeendencies()}, 100 + Math.random() * 200)
+    setTimeout(function () {downloadDependencies()}, 100 + Math.random() * 200)
   }
 
-  function downloadDepeendencies() {
-    status(InstalationProgress(lib, 'downloading dependencies'))
+  function downloadDependencies() {
+    status(InstallationProgress(lib, 'downloading dependencies'))
 
     // Wait 300ms before next step
     setTimeout(function () {compileCode()}, 150 + Math.random() * 200)
   }
 
   function compileCode() {
-    status(InstalationProgress(lib, 'compiling code'))
+    status(InstallationProgress(lib, 'compiling code'))
 
     // Wait 300ms before next step
     setTimeout(function () {finishUp()}, 50 + Math.random() * 200)
   }
 
   function finishUp() {
-    status(InstalationProgress(lib, 'finished', true))
+    status(InstallationProgress(lib, 'finished', true))
     callback()
   }
 }

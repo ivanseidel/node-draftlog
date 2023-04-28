@@ -15,10 +15,10 @@ console.log()
 var updateLoading = console.draft()
 
 function loadingTest(){
-  updateLoading(Loading('Inderteminate Loading...'))
+  updateLoading(Loading('Indeterminate Loading...'))
 }
 
-// Keeps updating underteminate loading
+// Keeps updating indeterminate loading
 var interval = setInterval(loadingTest, 100)
 
 var steps = ['Doing that', 'Then that', 'And after that', 'We will finish', 'In', '3', '2', '1']
