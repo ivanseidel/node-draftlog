@@ -80,7 +80,7 @@ console.log('It doesn`t matter')
 console.log('How \n many \n lines \n it uses')
 ```
 
-Or maybe, to show an flow process?
+Or maybe, to show a flow process?
 ```javascript
 function someAsyncFunction(){ 
   var TAG = '[someAsyncFunction]'
@@ -106,9 +106,9 @@ You can create your own progress bar, just like "that":
 ```javascript
 require('draftlog').into(console)
 
-// Input progess goes from 0 to 100
+// Input progress goes from 0 to 100
 function ProgressBar(progress) {
-  // Make it 50 characters length
+  // Make it 50 characters long
   var units = Math.round(progress / 2)
   return '[' + '='.repeat(units) + ' '.repeat(50 - units) + '] ' + progress + '%'
 }
@@ -145,7 +145,7 @@ automatically, because the stream is being "read". To stop your own code, you ca
 
 ## Discouragements
 
-This library is awesome for development, `cli` tools and what ever you want to created, that is NOT an
+This library is awesome for development, `cli` tools and whatever you want to create, that is NOT an
 optimized "slave" server. Please, disable it passing `true` as a second parameter to the DraftLog initialization:
 
 ```javascript
